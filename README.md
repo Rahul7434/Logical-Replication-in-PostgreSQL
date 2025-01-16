@@ -23,4 +23,9 @@ Logical replication allows selective data replication between postgresql databas
 
    systemctl restart postgresql
    ```
-5. 
+5. Add an entry to allow the subscriber to connect.
+   ```
+   host replication replicator <subscriber_ip/subnet> md5
+   ```
+---
+
